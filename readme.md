@@ -8,7 +8,7 @@ A pixel-level terrain trafficability assessment model combining freely available
 
 ## Study Area
 
-The model was tested over the Andorra / southern France / northern Spain region. This area was chosen for data availability and the absence of snow cover during the analysis date (13 January 2026).
+The model was tested over the Andorra / southern France / northern Spain region. This area was chosen for data availability and the absence of snow cover (excluding mountain) during the analysis date (13 January 2026).
 
 ---
 
@@ -16,8 +16,8 @@ The model was tested over the Andorra / southern France / northern Spain region.
 
 The pipeline consists of two parts:
 
-1. **RCI model** — computes a pixel-level Rating Cone Index (RCI) raster in kPa from soil and terrain inputs
-2. **VCI comparison** — computes vehicle-specific Vehicle Cone Index (VCI) thresholds and classifies each pixel as GO, SLOW-GO, or NO-GO
+1. **RCI model**: computes a pixel-level Rating Cone Index (RCI) raster in kPa from soil and terrain inputs
+2. **VCI comparison**: computes vehicle-specific Vehicle Cone Index (VCI) thresholds and classifies each pixel as GO, SLOW-GO, or NO-GO
 
 ### Pipeline
 
@@ -91,7 +91,7 @@ Only open terrain classes are retained. Urban areas, forests, and water bodies a
 
 ---
 
-## VCI Calculation — HMMWV M1152A1
+## VCI Calculation: HMMWV M1152A1
 
 Vehicle Cone Index thresholds are computed from the J.D. Priddy and T. Ciobotaru formulas.
 
@@ -229,3 +229,13 @@ Wang, R., Wan, S., Chen, W., Qin, X., Zhang, G., Wang, L. (2024). A novel finer 
 Military Tire Guides. (2026). https://aaa1surplus.com/guides.html (accessed 04.05.2026)
 
 AM General. (2018). *M1100 Series HMMWV M1152*. https://amgeneral.com/wp-content/uploads/2019/12/M1152.pdf
+
+Open Topo Data. EU-DEM.  https://www.opentopodata.org/datasets/eudem/ 
+ 
+EU-SoilHydroFrids ver 1.0. https://eusoilhydrogrids.rissac.hu/250.php
+
+SoilGrids. https://soilgrids.org/
+
+CORINE Land Cover 2018 (vector/raster 100 m), Europe, 6-yearly. https://land.copernicus.eu/en/products/corine-land-cover/clc2018
+
+International Soil Moisture Network. https://ismn.earth/en/
