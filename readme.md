@@ -1,6 +1,6 @@
 # Simple RCI-Based Terrain Trafficability Model
 
-A pixel-level terrain trafficability assessment model combining freely available global remote sensing and soil datasets with empirical soil strength equations from the NATO Reference Mobility Model (NRMM II). The model produces GO / SLOW-GO / NO-GO rasters for a given vehicle.
+A pixel-level terrain trafficability assessment model combining freely available global remote sensing and soil datasets with empirical soil strength equations. The model produces GO / SLOW-GO / NO-GO rasters for a given vehicle.
 
 > **Note:** This model is developed for scientific and educational purposes as part of a spatial analysis course at the University of Tartu (Geography MSc, 2026).
 
@@ -37,7 +37,7 @@ RCI model (pixel-level, kPa)
         ↓
 CORINE open terrain mask
         ↓
-RCI raster → compare with VCI thresholds (NRMM II, HMMWV M1152)
+RCI raster → compare with VCI thresholds (HMMWV M1152)
         ↓
 GO / SLOW-GO / NO-GO classification rasters (VCI1 and VCI50)
 ```
